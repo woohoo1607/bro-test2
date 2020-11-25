@@ -48,10 +48,9 @@ html {
 }
 
 body {
-    font-size: 17px;
-    color: #737373;
-    background: #fff;
-    line-height: 1;
+    background: #f0f0f0;
+    font-size: 16px;
+    color: #fff;
 }
 
 a {
@@ -111,11 +110,9 @@ button {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     font-family: 'MavenProRegular', sans-serif;
-    font-size: 16px;
-    color: #fff;
 }
 
 a:hover {
@@ -396,8 +393,8 @@ header p span {
 
 .recalls {
     background: url("../img/recals-back.png") 0 -200px no-repeat;
-    background-size: cover;
-    padding: 540px 0 37px 0;
+    background-size: contain;
+    padding: 540px 0 0 0;
     width: 100%;
 }
 
@@ -521,9 +518,7 @@ header p span {
     line-height: 70px;
     justify-content: center;
     font-size: 18px;
-    background: #000;
-    color: #fff;
-    mix-blend-mode: screen;
+    background: transparent;
 }
 
 .call-us {
@@ -623,4 +618,219 @@ footer a {
 
 .footer-item a {
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1439px) { /* 1024<width<1439 main 1024*/
+    header {
+        padding: 30px 30px 100px 30px;
+        background-position: 0;
+    }
+
+    .specialist {
+        padding: 60px 0;
+    }
+
+    .category-item h3 {
+        min-height: 55px;
+    }
+
+    .opeka {
+        padding: 50px;
+    }
+
+    .opeka h2 {
+        font-size: 50px;
+    }
+
+    .opeka-search {
+        margin-top: 180px;
+    }
+
+    .recalls h2 {
+        padding: 50px 0;
+    }
+
+    .preference-container {
+        padding: 60px;
+    }
+
+    .preference-list {
+        width: 48%;
+    }
+
+    .preference-title {
+        width: 48%;
+        text-align: center;
+    }
+
+    .preference-title button {
+        margin: 0 auto;
+    }
+
+    .recalls, .preference {
+        padding-top: 400px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) { /* 768<width<1023 main 768*/
+    header {
+        padding: 30px;
+    }
+
+    .top {
+        margin-bottom: 60px;
+    }
+
+    .top-item a {
+        display: none;
+    }
+
+    header h2 {
+        font-size: 50px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    header h2 span {
+        font-size: 30px;
+    }
+
+    header p br {
+        display: none;
+    }
+
+    .specialist {
+        padding: 40px 0;
+    }
+
+    .specialist h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .specialist-categories {
+        flex-wrap: wrap;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .category-item {
+        margin-bottom: 35px;
+    }
+
+    .opeka {
+        padding: 20px;
+    }
+
+    .call-us {
+        padding: 30px 0;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer-left, .footer-right{
+        width: 100%;
+    }
+
+    .footer-left {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .social {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .how-it-works {
+        padding-top: 340px;
+    }
+
+    .recalls {
+        padding-top: 270px;
+    }
+
+    .preference {
+        padding-top: 300px;
+        background-position: -180px -150px;
+    }
+}
+
+@media screen and (max-width: 767px) { /* 480<width<767 main 480*/
+    .search-top {
+        padding: 15px 0;
+    }
+
+    .opeka {
+        flex-direction: column;
+    }
+
+    .opeka-search {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .opeka-search button {
+        margin: 0 auto;
+    }
+
+    .steps {
+        width: 100%;
+    }
+
+    .preference-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .preference-list {
+        width: 100%;
+    }
+
+    .preference-title {
+        width: 100%;
+    }
+
+    .preference-title h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .call-us h2 {
+        font-size: 30px;
+    }
+
+    .call-us a {
+        margin: 20px auto 0 auto;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .how-it-works {
+        background-position: top;
+        padding-top: 250px;
+    }
+
+    .recalls {
+        padding-top: 180px;
+        background-position: 0 -100px;
+    }
+
+    .preference {
+        padding-top: 250px;
+        background-position: -430px -180px;
+    }
 }
