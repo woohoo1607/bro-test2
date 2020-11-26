@@ -65,6 +65,7 @@ a:hover {
 button {
     border: none;
 }
+
 .clr, #clr {
     clear: both;
 }
@@ -150,6 +151,7 @@ header {
 nav {
     margin-left: 39px;
 }
+
 nav button {
     font-family: 'MavenProRegular', sans-serif;
     font-size: 16px;
@@ -285,10 +287,7 @@ header p span {
 .category-item {
     width: 266px;
     text-align: center;
-}
-
-.category-item img {
-    height: 120px;
+    padding-top: 120px;
 }
 
 .category-item h3 {
@@ -301,6 +300,22 @@ header p span {
 
 .category-item p {
     font-family: 'MavenProRegular', sans-serif;
+}
+
+.massage {
+    background: url("../img/massage.png") top center no-repeat;
+}
+
+.nurses {
+    background: url("../img/nurses.png") top center no-repeat;
+}
+
+.therapy {
+    background: url("../img/therapy.png") top center no-repeat;
+}
+
+.specialist1 {
+    background: url("../img/specialist1.png") top center no-repeat;
 }
 
 .how-it-works {
@@ -341,6 +356,7 @@ header p span {
 
 .steps {
     width: 48%;
+    padding-left: 150px;
 }
 
 .step {
@@ -354,6 +370,7 @@ header p span {
     font-family: 'MavenProBold', sans-serif;
     font-size: 22px;
     margin-bottom: 19px;
+    position: relative;
 }
 
 .step p {
@@ -365,10 +382,54 @@ header p span {
     padding-left: 80px;
 }
 
+.step.step-left h3::after {
+    content: "";
+    width: 170px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 13px;
+    left: 236px;
+}
+
+.step.step-test h3::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -129px;
+    top: 7px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 13px solid #fff;
+}
+
 .step.step-right {
     align-items: flex-end;
     background-position: top right;
     padding-right: 80px;
+}
+
+.step.step-right h3::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: -129px;
+    top: 7px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 13px solid #fff;
+}
+
+.step.step-select h3::after {
+    content: "";
+    width: 170px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 13px;
+    right: 236px;
 }
 
 .step-right p {
@@ -377,14 +438,43 @@ header p span {
 
 .step-search {
     background: url("../img/seach.png") no-repeat;
+    position: relative;
+}
+
+.step-search::after, .step-test::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 180px;
+    border: 2px solid;
+    border-left: 0;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    top: 33px;
+    right: -140px;
 }
 
 .step-select {
     background: url("../img/cursor.png") no-repeat;
+    position: relative;
+}
+
+.step-select::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 217px;
+    border: 2px solid;
+    border-right: 0;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    top: 33px;
+    left: -140px;
 }
 
 .step-test {
     background: url("../img/clock.png") no-repeat;
+    position: relative;
 }
 
 .step-pay {
@@ -499,12 +589,14 @@ header p span {
     position: relative;
     margin-bottom: 40px;
 }
+
 .preference-title {
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .preference-title h2 {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 80px;
@@ -552,6 +644,10 @@ footer {
     background-color: #0b2a37;
     padding: 82px 43px 92px 100px;
     display: flex;
+}
+
+footer img {
+    width: 220px;
 }
 
 footer h2 {
@@ -620,7 +716,8 @@ footer a {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1439px) { /* 1024<width<1439 main 1024*/
+@media screen and (max-width: 1439px) {
+    /* 1024<width<1439 main 1024*/
     header {
         padding: 30px 30px 100px 30px;
         background-position: 0;
@@ -635,7 +732,8 @@ footer a {
     }
 
     .opeka {
-        padding: 50px;
+        padding: 30px;
+        justify-content: space-between;
     }
 
     .opeka h2 {
@@ -671,9 +769,18 @@ footer a {
         padding-top: 400px;
     }
 
+    .step::after, .step h3::before, .step h3::after {
+        display: none;
+    }
+
+    .steps {
+        padding-left: 0;
+    }
+
 }
 
-@media screen and (max-width: 1023px) { /* 768<width<1023 main 768*/
+@media screen and (max-width: 1023px) {
+    /* 768<width<1023 main 768*/
     header {
         padding: 30px;
     }
@@ -731,7 +838,7 @@ footer a {
         flex-direction: column-reverse;
     }
 
-    .footer-left, .footer-right{
+    .footer-left, .footer-right {
         width: 100%;
     }
 
@@ -759,13 +866,14 @@ footer a {
     }
 }
 
-@media screen and (max-width: 767px) { /* 480<width<767 main 480*/
+@media screen and (max-width: 767px) {
+    /* 480<width<767 main 480*/
     .search-top {
         padding: 15px 0;
     }
 
     .opeka {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .opeka-search {
@@ -781,6 +889,10 @@ footer a {
 
     .steps {
         width: 100%;
+    }
+
+    .step {
+        margin-bottom: 30px;
     }
 
     .preference-container {
