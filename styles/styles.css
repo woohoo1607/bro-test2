@@ -950,3 +950,44 @@ footer a {
         background-position: -430px -180px;
     }
 }
+
+@media screen and (max-width: 479px) {
+    header {
+        padding: 20px 0;
+        background-position: -210px 0;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .search-top a {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .opeka {
+        padding: 20px 5px;
+    }
+
+    .opeka-search h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .recalls {
+        background-position: 0 -50px;
+    }
+
+    .recall-item {
+        width: 98%;
+    }
+
+    .call-us {
+        padding: 20px 5px;
+    }
+}
