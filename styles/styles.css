@@ -288,13 +288,16 @@ header p span {
     width: 266px;
     text-align: center;
     padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .category-item h3 {
     margin-top: 45px;
     font-family: 'MavenProBold', sans-serif;
     font-size: 22px;
-    min-height: 44px;
+    min-height: 52px;
     margin-bottom: 20px;
 }
 
