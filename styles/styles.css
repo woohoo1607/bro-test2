@@ -53,19 +53,6 @@ body {
     color: #fff;
 }
 
-a {
-    color: #f39200;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-button {
-    border: none;
-}
-
 .clr, #clr {
     clear: both;
 }
@@ -116,7 +103,12 @@ button {
     font-family: 'MavenProRegular', sans-serif;
 }
 
-a:hover {
+.my-link {
+    text-decoration: none;
+}
+
+.my-link:hover {
+    text-decoration: none;
     color: var(--color-turquoise);
 }
 
@@ -140,7 +132,7 @@ header {
     align-items: center;
 }
 
-.top-item img {
+.header-logo {
     margin-right: 30px;
 }
 
@@ -152,7 +144,7 @@ nav {
     margin-left: 39px;
 }
 
-nav button {
+.menu-button {
     font-family: 'MavenProRegular', sans-serif;
     font-size: 16px;
     padding: 0 0 0 33px;
@@ -162,6 +154,7 @@ nav button {
     text-align: end;
     cursor: pointer;
     color: #fff;
+    border: none;
 }
 
 .register {
@@ -190,7 +183,7 @@ nav button {
     border-color: var(--color-turquoise);
 }
 
-header h2 {
+header .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 80px;
     text-align: center;
@@ -199,19 +192,19 @@ header h2 {
     margin-bottom: 35px;
 }
 
-header h2 span {
+.header-title-span {
     font-size: 58px;
     color: #fff;
 }
 
-header p {
+header .text {
     font-family: 'MavenProRegular', sans-serif;
     font-size: 26px;
     text-align: center;
     line-height: 38px;
 }
 
-header p span {
+.header-p-span {
     color: var(--color-turquoise);
     font-family: 'MavenProBold', sans-serif;
 }
@@ -228,6 +221,7 @@ header p span {
     margin-top: 40px;
     cursor: pointer;
     color: #fff;
+    border: none;
 }
 
 .question {
@@ -251,14 +245,14 @@ header p span {
     padding: 35px 0;
 }
 
-.search-top p {
+.search-top .text {
     font-family: 'MavenProMedium', sans-serif;
     font-size: 18px;
     color: #000;
     text-align: center;
 }
 
-.search-top a {
+.search-top .my-link {
     color: var(--color-turquoise);
     font-family: 'MavenProBold', sans-serif;
     font-size: 18px;
@@ -271,7 +265,7 @@ header p span {
     background-color: #fff;
 }
 
-.specialist h2 {
+.specialist .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 36px;
     text-align: center;
@@ -293,7 +287,7 @@ header p span {
     justify-content: space-between;
 }
 
-.category-item h3 {
+.category-item .sub-title {
     margin-top: 45px;
     font-family: 'MavenProBold', sans-serif;
     font-size: 22px;
@@ -301,7 +295,7 @@ header p span {
     margin-bottom: 20px;
 }
 
-.category-item p {
+.category-item .text {
     font-family: 'MavenProRegular', sans-serif;
 }
 
@@ -336,7 +330,7 @@ header p span {
     width: 100%;
 }
 
-.opeka h2 {
+.opeka .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 80px;
     margin-bottom: 70px;
@@ -369,7 +363,7 @@ header p span {
     margin-bottom: 60px;
 }
 
-.step h3 {
+.step .sub-title {
     font-family: 'MavenProBold', sans-serif;
     font-size: 22px;
     margin-bottom: 19px;
@@ -377,7 +371,7 @@ header p span {
     max-width: 230px;
 }
 
-.step p {
+.step .text {
     width: 240px;
 }
 
@@ -386,7 +380,7 @@ header p span {
     padding-left: 80px;
 }
 
-.step.step-left h3::after {
+.step.step-left .sub-title::after {
     content: "";
     width: 170px;
     height: 2px;
@@ -396,7 +390,7 @@ header p span {
     left: 236px;
 }
 
-.step.step-test h3::before {
+.step.step-test .sub-title::before {
     position: absolute;
     content: "";
     width: 0;
@@ -414,7 +408,7 @@ header p span {
     padding-right: 80px;
 }
 
-.step.step-right h3::before {
+.step.step-right .sub-title::before {
     position: absolute;
     content: "";
     width: 0;
@@ -426,7 +420,7 @@ header p span {
     border-right: 13px solid #fff;
 }
 
-.step.step-select h3::after {
+.step.step-select .sub-title::after {
     content: "";
     width: 170px;
     height: 2px;
@@ -436,7 +430,7 @@ header p span {
     right: 236px;
 }
 
-.step-right p {
+.step-right .text {
     text-align: right;
 }
 
@@ -492,7 +486,7 @@ header p span {
     width: 100%;
 }
 
-.recalls h2 {
+.recalls .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 36px;
     display: block;
@@ -519,7 +513,7 @@ header p span {
     justify-content: space-between;
 }
 
-.recall-item p {
+.recall-item .text {
     background-color: #eff7f7;
     padding: 35px 20px;
     display: block;
@@ -528,7 +522,7 @@ header p span {
     flex-grow: 2;
 }
 
-.recall-item p::after {
+.recall-item .text::after {
     content: '';
     position: absolute;
     bottom: -20px;
@@ -544,7 +538,7 @@ header p span {
     justify-content: flex-end;
 }
 
-.people img {
+.avatar {
     height: 50px;
     width: 50px;
     object-fit: cover;
@@ -559,7 +553,7 @@ header p span {
     justify-content: center;
 }
 
-.people-info h3 {
+.people-info .sub-title {
     font-family: 'MavenProBold', sans-serif;
     margin-bottom: 3px;
 }
@@ -583,7 +577,7 @@ header p span {
     width: 480px;
 }
 
-.preference-list p::before {
+.preference-list .text::before {
     content: "";
     width: 50px;
     height: 2px;
@@ -592,7 +586,7 @@ header p span {
     top: -10px;
 }
 
-.preference-list p {
+.preference-list .text {
     line-height: 20px;
     position: relative;
     margin-bottom: 40px;
@@ -605,7 +599,7 @@ header p span {
     justify-content: center;
 }
 
-.preference-title h2 {
+.preference-title .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 80px;
     margin-bottom: 58px;
@@ -627,19 +621,19 @@ header p span {
     text-align: center;
 }
 
-.call-us h2 {
+.call-us .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 36px;
     margin-bottom: 4px;
 }
 
-.call-us p {
+.call-us .text {
     font-family: 'MavenProMedium', sans-serif;
     font-size: 18px;
     margin-bottom: 25px;
 }
 
-.call-us a {
+.call-us .my-link {
     padding: 22px 50px;
     font-size: 16px;
 }
@@ -650,16 +644,16 @@ footer {
     display: flex;
 }
 
-footer img {
+.footer-logo {
     width: 220px;
 }
 
-footer h2 {
+footer .title {
     font-family: 'MavenProBold', sans-serif;
     font-size: 22px;
 }
 
-footer a {
+footer .my-link {
     color: #fff;
     font-size: 16px;
     font-family: 'MavenProRegular', sans-serif;
@@ -678,13 +672,13 @@ footer a {
     width: 220px;
 }
 
-.social a {
+.social .my-link {
     display: block;
     width: 30px;
     height: 30px;
 }
 
-.social h2 {
+.social .title {
     max-width: 102px;
 }
 
@@ -721,12 +715,12 @@ footer a {
     flex-direction: column;
 }
 
-.footer-item h2 {
+.footer-item .title {
     min-height: 55px;
     margin-bottom: 5px;
 }
 
-.footer-item a {
+.footer-item .my-link {
     margin-bottom: 15px;
 }
 
@@ -741,7 +735,7 @@ footer a {
         padding: 60px 0;
     }
 
-    .category-item h3 {
+    .category-item .sub-title {
         min-height: 55px;
     }
 
@@ -750,7 +744,7 @@ footer a {
         justify-content: space-between;
     }
 
-    .opeka h2 {
+    .opeka .title {
         font-size: 50px;
     }
 
@@ -758,7 +752,7 @@ footer a {
         margin-top: 180px;
     }
 
-    .recalls h2 {
+    .recalls .title {
         padding: 50px 0;
     }
 
@@ -783,12 +777,16 @@ footer a {
         padding-top: 400px;
     }
 
-    .step::after, .step h3::before, .step h3::after {
+    .step::after, .step .sub-title::before, .step .sub-title::after {
         display: none;
     }
 
     .steps {
         padding-left: 0;
+    }
+
+    footer {
+        padding: 82px 30px 92px 60px;
     }
 
 }
@@ -803,25 +801,25 @@ footer a {
         margin-bottom: 60px;
     }
 
-    .top-item a {
+    .top-item .my-link {
         display: none;
     }
 
-    .top-item img {
+    .header-logo {
         margin-right: 0;
     }
 
-    header h2 {
+    header .title {
         font-size: 50px;
         line-height: 45px;
         margin-bottom: 20px;
     }
 
-    header h2 span {
+    .header-title-span {
         font-size: 30px;
     }
 
-    header p br {
+    header .text br {
         display: none;
     }
 
@@ -829,7 +827,7 @@ footer a {
         padding: 40px 0;
     }
 
-    .specialist h2 {
+    .specialist .title {
         margin-bottom: 30px;
         font-size: 30px;
     }
@@ -926,16 +924,16 @@ footer a {
         width: 100%;
     }
 
-    .preference-title h2 {
+    .preference-title .title {
         font-size: 50px;
         margin-bottom: 20px;
     }
 
-    .call-us h2 {
+    .call-us .title {
         font-size: 30px;
     }
 
-    .call-us a {
+    .call-us .my-link {
         padding: 22px 10px;
     }
 
@@ -972,7 +970,7 @@ footer a {
 @media screen and (max-width: 479px) {
     header {
         padding: 20px 0;
-        background-position: -210px 0;
+        background-position: -280px 0;
     }
 
     .top {
@@ -983,7 +981,7 @@ footer a {
         margin-top: 20px;
     }
 
-    .search-top a {
+    .search-top .my-link {
         display: block;
         margin-top: 5px;
     }
@@ -992,13 +990,21 @@ footer a {
         padding: 20px 5px;
     }
 
-    .opeka-search h2 {
+    .opeka-search .title {
         font-size: 40px;
         margin-bottom: 30px;
     }
 
+    .how-it-works {
+        padding-top: 200px;
+    }
+
     .recalls {
-        background-position: 0 -50px;
+        background-position: 0 -30px;
+    }
+
+    .preference {
+        background-position: -750px -300px;
     }
 
     .recall-item {
