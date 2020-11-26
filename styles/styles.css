@@ -31,11 +31,11 @@ caption, th, td {
 }
 
 strong, b {
-    font-weight: bold
+    font-weight: bold;
 }
 
 em {
-    font-style: italic
+    font-style: italic;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -523,7 +523,7 @@ header .text {
 }
 
 .recall-item .text::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -20px;
     right: 0;
