@@ -140,7 +140,7 @@ header {
     margin-right: 10px;
 }
 
-nav {
+.header-menu {
     margin-left: 39px;
 }
 
@@ -977,7 +977,7 @@ footer .my-link {
         flex-direction: column;
     }
 
-    nav {
+    .header-menu {
         margin-top: 20px;
     }
 
