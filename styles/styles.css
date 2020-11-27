@@ -112,7 +112,7 @@ body {
     color: var(--color-turquoise);
 }
 
-header {
+.header {
     padding: 21px 29px 154px 30px;
     text-align: center;
     background: linear-gradient(rgba(23, 49, 83, .5), rgba(23, 49, 83, .5)), url("../img/top.jpg") 0 -35px no-repeat;
@@ -183,7 +183,7 @@ header {
     border-color: var(--color-turquoise);
 }
 
-header .title {
+.header .title {
     font-family: 'MavenProBlack', sans-serif;
     font-size: 80px;
     text-align: center;
@@ -197,7 +197,7 @@ header .title {
     color: #fff;
 }
 
-header .text {
+.header .text {
     font-family: 'MavenProRegular', sans-serif;
     font-size: 26px;
     text-align: center;
@@ -638,7 +638,7 @@ header .text {
     font-size: 16px;
 }
 
-footer {
+.footer {
     background-color: #0b2a37;
     padding: 82px 43px 92px 100px;
     display: flex;
@@ -648,12 +648,12 @@ footer {
     width: 220px;
 }
 
-footer .title {
+.footer .title {
     font-family: 'MavenProBold', sans-serif;
     font-size: 22px;
 }
 
-footer .my-link {
+.footer .my-link {
     color: #fff;
     font-size: 16px;
     font-family: 'MavenProRegular', sans-serif;
@@ -726,7 +726,7 @@ footer .my-link {
 
 @media screen and (max-width: 1439px) {
     /* 1024<width<1439 main 1024*/
-    header {
+    .header {
         padding: 30px 30px 100px 30px;
         background-position: 0;
     }
@@ -785,7 +785,7 @@ footer .my-link {
         padding-left: 0;
     }
 
-    footer {
+    .footer {
         padding: 82px 30px 92px 60px;
     }
 
@@ -793,7 +793,7 @@ footer .my-link {
 
 @media screen and (max-width: 1023px) {
     /* 768<width<1023 main 768*/
-    header {
+    .header {
         padding: 30px;
     }
 
@@ -809,7 +809,7 @@ footer .my-link {
         margin-right: 0;
     }
 
-    header .title {
+    .header .title {
         font-size: 50px;
         line-height: 45px;
         margin-bottom: 20px;
@@ -819,7 +819,7 @@ footer .my-link {
         font-size: 30px;
     }
 
-    header .text br {
+    .header .text br {
         display: none;
     }
 
@@ -850,7 +850,7 @@ footer .my-link {
         padding: 30px 0;
     }
 
-    footer {
+    .footer {
         flex-direction: column-reverse;
     }
 
@@ -937,7 +937,7 @@ footer .my-link {
         padding: 22px 10px;
     }
 
-    footer {
+    .footer {
         padding: 20px;
     }
 
@@ -968,7 +968,7 @@ footer .my-link {
 }
 
 @media screen and (max-width: 479px) {
-    header {
+    .header {
         padding: 20px 0;
         background-position: -280px 0;
     }
